@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Exam Performance Indicator</h1>
+        <p>
+            This application allows you to predict the mathematics scores of students based on several features including gender, race/ethnicity, parental level of education, lunch type, and test preparation course.
+        </p>
+        <p>
+            The model behind this application is trained on a dataset of student performance and uses machine learning techniques to make accurate predictions. Simply provide the required details on the next page, and the model will predict the expected math score for the student.
+        </p>
+        <p>
+            This tool is designed to help educators, parents, and students gain insights into factors that may influence academic performance, allowing for targeted interventions and better educational outcomes.
+        </p>
+        <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary">Predict Student Math Score</a>
+    </div>
+</body>
+</html>
